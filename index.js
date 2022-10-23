@@ -1,11 +1,13 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
+const generateMarkdown = require('./utilities/generateMarkdown');
 
-inquirer
-  .prompt([
+// Questions for user to input  
+const questions = ([
     {
       type: 'input',
-      name: 'username',
+      name: 'github',
       message: 'What is your GitHub username?',
     },
     {
@@ -15,7 +17,7 @@ inquirer
     },
     {
       type: 'input',
-      name: 'project',
+      name: 'title',
       message: 'What is your projects name?',
     },
     {
@@ -24,24 +26,27 @@ inquirer
       message: 'Please write a short description of your project'
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
-      message: 'What kind of license should your project have?'
+      message: 'What kind of license should your project have?',
+      choices: ['MIT', 'APACHE 3.0', 'BSD 3', 'none'],
     },
     {
       type: 'input',
-      name: 'dependencies',
-      message: 'What command should be run to install dependencies?'
+      name: 'installation',
+      message: 'What command should be run to install dependencies?',
+      default: 'npm i',
     },
     {
       type: 'input',
-      name: 'tests',
-      message: 'What command should be run to run tests?(npm test)'
+      name: 'test',
+      message: 'What command should be run to run tests?(npm run test)',
+      default: 'npm i',
     },
     {
       type: 'input',
-      name: 'repo',
-      message: 'What does the user need to know about using the repo?'
+      name: 'usage',
+      message: 'What does the user need to know about using the repo?' 
     },
     {
       type: 'input',
@@ -49,12 +54,29 @@ inquirer
       message: 'What does the user need to know about contributing to the repo?'
     },
 
-  ])
-  .then((answers) =>
-  // Name the file with the name answer
-    const filename = `${answers.name.toLowerCase().split(' ').join(' ')}.json`;
+  ]);
+
+  // Function to write README file using the user input
+  function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data, err => err ? console.log(err) : console.log('success'));
+  }
+  // Function to run the app .then(inquirerResponse) why is this giving me error?
+  function init() {
+    inquirer.prompt(questions).then((inquirerResponse) => {
+      console.log('Creating README...');
+      writeToFile('README.md', generateMarkdown({ ...inquirerResponse }));
+    })
+  };
+
+init();
   
-  fs.writeFile(filename, JSON.stringify(answers, null, '\t'), (err) =>
-    err ? console.log(err) : console.log('Success!')
-  );
-});
+//   .then((answers) =>
+//   // Name the file with the name answer
+//     const filename = `${answers.name.toLowerCase().split(' ').join(' ')}.json`
+//     console.log(answers);
+
+//   fs.writeFile(filename, JSON.stringify(answers, null, '\t'), (err) =>
+//     err ? console.log(err) : console.log('Success!')
+//   );
+// });
+
