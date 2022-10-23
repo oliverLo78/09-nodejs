@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
     let badge = '';
 
     if(license != 'None') {
-        badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)` + license +'-yellow)';
+        badge = `![License Badge](https://img.shields.io/github/license/oliverLo78/09-nodejs)`
     }
 
     return badge;
@@ -56,9 +56,11 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ![License Badge](https://img.shields.io/badge/License/${data.github}/${data.repo})
+  ![License Badge]![License Badge](https://img.shields.io/github/license/${data.github}/${data.repo})
+
   ## Description 
   ${data.description}
+  
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
