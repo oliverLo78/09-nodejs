@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
     let badge = '';
 
     if(license != 'None') {
-        badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)' + license +'-yellow)';
+        badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)` + license +'-yellow)';
     }
 
     return badge;
@@ -56,16 +56,16 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  
+  ![License Badge](https://img.shields.io/badge/License/${data.github}/${data.repo})
   ## Description 
   ${data.description}
   ## Table of Contents
-  *[Installation](#installation)
-  *[Usage](#usage)
-  *[Contibution](#contribution)
-  *[Tests](#contribution)
-  *[Questions](#questions)
-  *[License](#license)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contibution](#contribution)
+  * [Tests](#contribution)
+  * [Questions](#questions)
+  * [License](#license)
 
   ## Installation
   ${data.installation}
