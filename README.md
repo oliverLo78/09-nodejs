@@ -33,7 +33,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 2. The application will ask the user questions to complete the README.md 
 3. After the user answers all the questions the README file will be created
 
-![Screenshot README](./09-nodejs/assets/Readme.png?raw=true)
+![Screenshot README](./assets/Readme.png?raw=true)
     
 ## Demo
 
