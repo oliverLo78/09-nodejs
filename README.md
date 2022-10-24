@@ -2,13 +2,13 @@
   ![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)
 
   ## Description 
-  prefessional README generator
+  professional README generator
   
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contibution](#contribution)
-  * [Tests](#contribution)
+  * [Tests](#Tests)
   * [Questions](#questions)
   * [License](#license)
 
@@ -23,9 +23,10 @@
   ```
   npm i inquirer@8.2.4
   ```
+  ![README generator](/09-nodejs/assets/Screenshot%20License%20Badge.png?raw=true "preview")
 
   ## Usage
-  
+
   [video demo](https://drive.google.com/file/d/1fHO-DT5WZqq2AEk4zMYYQYulGxboXhRw/view)
 
 
