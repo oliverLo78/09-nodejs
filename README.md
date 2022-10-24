@@ -1,76 +1,37 @@
-# 09-nodejs
 
-## Description
+  # 09-nodejs
+  ![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)
 
-Professional README Generator
-- Create a README file for your project quickly with this command line app
-- In order to save time and focus more on the functionality of your project 
-- Saves you some time and effort in completing your a README file
-- I learned about node index.js basic to have a gitignore file and npm dependencies
+  ## Description 
+  prefessional README generator
+  
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contibution](#contribution)
+  * [Tests](#contribution)
+  * [Questions](#questions)
+  * [License](#license)
 
-## Table of Contents (Optional)
+  ## Installation
+  npm i
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+  ## Usage
+  npm install
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#Contribution)
-- [Tests](#Tests)
-- [Questions](#Questions)
-- [Credits](#credits)
-- [License](#license)
+  ## Contribution
+  git clone and enjoy :)
 
-## Installation
+  ## Tests
+  npm i
+  
+  ## Questions
+  * Checkout my [GitHub profile](https://github.com/oliverLo78)
 
-1. Clone or download the files from this repo.
-2. Be sure to download and install Node.js to use this app.
-3. Then in VS code open integrated terminal, run npm -v to verify the version.
-4. Install the inquirer module npm install inquirer@8.2.4
+  * Any questions or feed back you can contact me via email[email me](mailto:oliverberto@gmail.com) 
+  ## License
+  Copyright (c) [oliverLo78](https://github.com/oliverLo78). All rights reserved
 
-## Usage
-
-1. Open the integrated terminal to run the application type node index.js
-2. The application will ask the user questions to complete the README.md 
-3. After the user answers all the questions the README file will be created
-
-![Screenshot README](./assets/Readme.png?raw=true)
-    
-## Demo
-
-[video demo](https://drive.google.com/file/d/1fHO-DT5WZqq2AEk4zMYYQYulGxboXhRw/view)
-
-## Credits
-
-[University of Central Florida Coding Bootcamp](https://github.com/UCF-Coding-Boot-Camp)
-
-## License
-
-MIT License
-
-Copyright (c) [2022] [Oliver Lopez]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
----
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-
+  Licensed under the MIT license.
+  
+  

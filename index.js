@@ -1,12 +1,14 @@
+// fs is Node standard library package for reading and writing files
+// bringing the inquirer library into the file 
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 const generateMarkdown = require('./utilities/generateMarkdown');
 
-// Questions for user to input  
+// Questions for user to answer their input  
 const questions = ([
-    {
-      type: 'input',
+    {  // we can change the type field of the question can be Input, Number, Confirm, List, Checkbox, Password
+      type: 'input', 
       name: 'github',
       message: 'What is your GitHub username?',
     },
@@ -29,12 +31,14 @@ const questions = ([
       type: 'list',
       name: 'license',
       message: 'What kind of license should your project have?',
+      // list type rquires you to add an additional key to your question: choices array
       choices: ['MIT', 'APACHE 3.0', 'BSD 3', 'none'],
     },
     {
       type: 'input',
       name: 'installation',
       message: 'What command should be run to install dependencies?',
+      // lets you add default values to speed navigation and make suggestions to user
       default: 'npm i',
     },
     {

@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
     let badge = '';
 
     if(license != 'None') {
-        badge = `![License Badge](https://img.shields.io/github/license/oliverLo78/09-nodejs)`
+        badge = `![License Badge](https://img.shields.io/badge/license-${data.license}MIT-success)`;
     }
 
     return badge;
@@ -56,7 +56,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ![License Badge]![License Badge](https://img.shields.io/github/license/${data.github}/${data.repo})
+  ![License Badge](https://img.shields.io/badge/license-${data.license}-success?style=plastic)
 
   ## Description 
   ${data.description}
@@ -92,7 +92,7 @@ function generateMarkdown(data) {
   
   `;
 }
-
+// module.exports is used to store generateMarkdown function
 module.exports = generateMarkdown;
 
 //     // return `# ${data.title}`;
