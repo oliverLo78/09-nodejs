@@ -23,7 +23,7 @@
   ```
   npm i inquirer@8.2.4
   ```
-  ![README generator](/09-nodejs/assets/Screenshot%20License%20Badge.png?raw=true "preview")
+  ![README generator](assets/Screenshot%20License%20Badge.png?raw=true)
 
   ## Usage
 
