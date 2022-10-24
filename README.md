@@ -1,4 +1,3 @@
-
   # 09-nodejs
   ![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)
 
@@ -14,10 +13,21 @@
   * [License](#license)
 
   ## Installation
-  npm i
+
+  ```
+  initialize repository with a package.json
+  ```
+  ```
+  npm init -y
+  ```
+  ```
+  npm i inquirer@8.2.4
+  ```
 
   ## Usage
-  npm install
+  
+  [video demo](https://drive.google.com/file/d/1fHO-DT5WZqq2AEk4zMYYQYulGxboXhRw/view)
+
 
   ## Contribution
   git clone and enjoy :)
